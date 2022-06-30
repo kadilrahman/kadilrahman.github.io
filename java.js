@@ -69,8 +69,9 @@ calculateBtn.addEventListener("click", () => {
     genderValue,
     activityValue
   );
+  let rounds = Math.round(BMR);
 
-  calories.innerHTML = BMR.toLocaleString("en-US");
+  calories.innerHTML = rounds.toLocaleString("en-US");
 });
 
 //INPUT VALIDATION
@@ -149,8 +150,8 @@ calculateBtn1.addEventListener("click", () => {
   let act = document.getElementById("act").value;
 
   let BMR1 = calculateBMR1(weight1.value, time.value, act);
-
-  calories1.innerHTML = BMR1;
+  let round1 = Math.round(BMR1);
+  calories1.innerHTML = round1.toLocaleString("en-US");
 });
 
 //Validation

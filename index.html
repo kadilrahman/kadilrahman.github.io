@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/e5a0d9f5b6.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <div class="header">
+    <svg xmlns="http://www.w3.org/2000/svg">
+  
+      <!-- filterUnits is required to prevent clipping the blur outside the viewBox -->
+      
+        <filter id="motion-blur-filter" filterUnits="userSpaceOnUse">
+          
+          <!-- We only want horizontal blurring. x: 100, y: 0 -->
+          
+            <feGaussianBlur stdDeviation="100 0"></feGaussianBlur>
+        </filter>
+    </svg>
+    
+    <!-- We use a custom attribute to set the text that the pseudo element should display and blur. In this case, we use the first character of the word. -->
+    
+    <span filter-content="S">Let's Move</span>
+    
+  </div>
+    
+      <div class="main1-container">
+        <!-- <div class="heading1">
+        <h1>Calorie requirement</h1>
+      </div> -->
+
+        <div class="container">
+          <div class="bmr-calculator">
+            <h2>Calorie Calculator</h2>
+            <div class="controls">
+              <form>
+                <h3>Age</h3>
+                <input type="text" id="age" />
+
+                <div class="gender">
+                  <h3>Gender</h3>
+                  <input
+                    type="radio"
+                    id="male"
+                    value="male"
+                    name="gender"
+                    checked
+                  />
+                  <label for="male">Male</label>
+
+                  <input
+                    type="radio"
+                    id="female"
+                    value="female"
+                    name="gender"
+                  />
+                  <label for="female">Female</label>
+                </div>
+
+                <div class="height">
+                  <h3>Height</h3>
+                  <input type="text" id="height" />
+                  <div class="unit">cm</div>
+                </div>
+
+                <div class="weight">
+                  <h3>Weight</h3>
+                  <input type="text" id="weight" />
+                  <div class="unit">kg</div>
+                </div>
+
+                <!-- <div class="dropdown">
+                      <div class="dropdown-select">
+                        <span class="select">Select activity</span>
+                        <i class="fa fa-caret-down icon"></i>
+                      </div>
+                      <div class="dropdown-list">
+                        <div class="dropdown-list_item" id="ex1" value="No">
+                          No exercise
+                        </div>
+                        <div class="dropdown-list_item" id="ex2" value="light">
+                          Light exercise
+                        </div>
+                        <div class="dropdown-list_item" id="ex3" value="moderate">
+                          Moderate exercise
+                        </div>
+                        <div class="dropdown-list_item" id="ex4" value="hard">
+                          Hard exercise
+                        </div>
+                        <div class="dropdown-list_item" id="ex5" value="vhard">
+                          Very hard exercise
+                        </div>
+                      </div>
+                    </div> -->
+                <div class="activity">
+                  <h3>Activity Type</h3>
+                  <select name="activity" id="activity">
+                    <option value="exercise">Select activity</option>
+                    <option value="no">No exercise</option>
+                    <option value="light">Light exercise</option>
+                    <option value="moderate">Moderate exercise</option>
+                    <option value="hard">Hard exercise</option>
+                    <option value="vhard">Very hard exercise</option>
+                  </select>
+                </div>
+              </form>
+            </div>
+            <div class="result">
+              <button class="calculate-btn">Calculate</button>
+
+              <div class="result-message">
+                <span class="calories">0</span>
+                Calories/day
+              </div>
+
+              <div class="error-message">
+                <p>Please enter all the details correctly</p>
+              </div>
+            </div>
+          </div>
+          <div class="bmr1-info">
+            <h1>Calorie Calculator</h1>
+
+            <p style="font-family:verdana">This caluclator uses a special formula based on your age, gender, height, weight and activity type to calculate how many calories you need to intake to maintain your given weight. The calorie intake we often see online is 2000 a day for women and 2500 a day for men - this is obviously a generalisation and isn't always the healthiest option. Some people are a lot more active than others, therefore they will require more calories. People less active will need less calories. Based on their characteristics and activity levels a person may gain or lose weight when consuming this amount of calories. Our calculator provides a much more accurate approach, leading to a much healthier lifestyle. To use the calculator just input your age, gender, height, weight and select your daily exercise intensity. </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- SECOND CALCULATOR-->
+      <!-- <div class="main1-container"> -->
+        <!-- <div class="heading2">
+        <h1>Calorie requirement</h1>
+      </div> -->
+
+        <div class="container2">
+          <div class="bmr-calculator2">
+            <h2>Calories Burned </h2>
+            <div class="controls">
+              <form>
+                  
+                <div class="weight">
+                  <h3>Weight</h3>
+                  <input type="text" id="weight1" />
+                  <div class="unit">kg</div>
+                </div>
+                <br>
+                <br>
+                <br>
+
+                <div class="time">
+                  <h3>Time</h3>
+                  <input type="text" id="time" />
+                  <div class="unit">mins</div>
+                </div>
+                <br>
+                <br>
+                <br>
+                <div class="activity">
+                  <h3>Activity</h3>
+                  <select name="activity" id="act">
+                    <option value="exercise">Select activity</option>
+                    <option value="3.5">Walking</option>
+                    <option value="7.0">Running</option>
+                    <option value="7.5">Cylcing</option>
+                  </select>
+                </div>
+                <br>
+                <br>
+                
+              </form>
+            </div>
+            <div class="result">
+                <button class="calculate-btn2">Calculate</button>
+    
+                <div class="result-message" id="result1">
+                  <span class="calories">0</span>
+                  Calories/day
+                </div>
+    
+                <div class="error-message2">
+                  <p>Please enter all the details correctly</p>
+                </div>
+              </div>
+          </div>
+          <div class="bmr2-info">
+            <h1>Calories Burned</h1>
+
+            <p style="font-family:verdana">Our second calculator will calculate the amount of calories you have burned when performing active movement. This is a good tool to use as often we do not realise how many calories we have burned and sometimes that means we fall below our daily calorie limit and start to lose weight. Other uses may be when you want to lose weight - therefore your goal is to burn so many calories per day. Another reason may be that you have gone over your daily calorie limit, so you want to burn so many calories through active movement to meet to even out the limit, meaning you will not gain weight. To use the calculator just input your weight, how long your exericse was, and the type of exercise you done (out of cycling, walking and running).</p>
+          </div>
+        </div>
+      
+      <!-- </div> -->
+    </div>
+    <br>
+    <br>
+    <br>
+
+    <div class="text">
+        <p style="font-family:verdana">In today’s world it is of ever-growing importance to keep your body nourished and healthy. Many people suffer from a lack of movement and indulge in junk food. Our calorie calculator will allow you to maximise your body’s potential and realise the endless possibilities you are capable of.</p>
+    </div>
+    <script src="java.js"></script>
+  </body>
+</html>

@@ -1,0 +1,281 @@
+.main1-container {
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+.heading1 {
+  text-align: center;
+}
+
+/* .main2-container {
+    background-color: rgb(197, 144, 144);
+    align-items: center;
+  } */
+
+.container {
+  width: 48%;
+  float: left;
+}
+.container2 {
+  width: 48%;
+  height: 617px;
+  float: right;
+}
+.bmr-calculator {
+  max-width: 300px;
+  font-family: "Roberto", sans-serif;
+  padding: 8px 24px;
+  box-shadow: 0 4px 8px -3px rgba(0, 0, 0, 0.3);
+  float: right;
+}
+.bmr-calculator2 {
+  max-width: 300px;
+  font-family: "Roberto", sans-serif;
+  padding: 8px 24px;
+  box-shadow: 0 4px 8px -3px rgba(0, 0, 0, 0.3);
+  float: left;
+  /* height: 615px; */
+}
+
+.info1 {
+  /* background-color: burlywood; */
+  width: 58%;
+  height: 600px;
+  padding-bottom: 15px;
+
+  margin-bottom: 5px;
+  float: right;
+  text-align: center;
+}
+.text1 {
+  padding: 5px;
+  padding-right: 100px;
+}
+
+.bmr-calculator,
+.bmr-calculator * {
+  box-sizing: border-box;
+}
+.bmr-calculator2,
+.bmr-calculator2 * {
+  box-sizing: border-box;
+}
+
+.bmr-calculator h2,
+.bmr-calculator2 h2 {
+  text-align: center;
+  background: #222;
+  color: #fff;
+  font-weight: 100;
+  margin: -8px -24px;
+  margin-bottom: 8px;
+  padding: 16px;
+}
+
+.bmr-calculator form h3,
+.bmr-calculator2 form h3 {
+  font-size: 15px;
+  text-transform: uppercase;
+  margin: 16px 0 10px 0;
+}
+
+.bmr-calculator form input[type="text"],
+.bmr-calculator2 form input[type="text"] {
+  width: 100%;
+  padding: 4px 16px;
+  font-size: 24px;
+  font-weight: bold;
+  border: 1px solid #d5dbdd;
+  border-radius: 4px;
+}
+
+.bmr-calculator form input[type="text"].invalid,
+.bmr-calculator2 form input[type="text"].invalid {
+  border: 1px solid red;
+}
+
+.bmr-calculator form,
+.bmr-calculator2 form {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.bmr-calculator form #female,
+.bmr-calculator2 form #female {
+  margin-left: 20px;
+}
+
+.bmr-calculator form .height,
+.bmr-calculator form .weight,
+.bmr-calculator form .time,
+.bmr-calculator2 form .height,
+.bmr-calculator2 form .weight,
+.bmr-calculator2 form .time {
+  position: relative;
+}
+
+.bmr-calculator form .unit,
+.bmr-calculator2 form .unit {
+  position: absolute;
+  right: 20px;
+  top: 50px;
+  color: #777;
+}
+
+.bmr-calculator .result .calculate-btn,
+.bmr-calculator2 .result .calculate-btn2 {
+  padding: 8px 24px;
+  margin: 16px 0;
+  font-size: 18px;
+  font-weight: 100;
+  text-transform: uppercase;
+  border: none;
+  background: #333;
+  color: #fff;
+  cursor: pointer;
+  margin-bottom: 32px;
+}
+
+.bmr-calculator .result,
+.bmr-calculator2 .result {
+  text-align: center;
+  color: #4e4e4e;
+  font-size: 18px;
+}
+
+.bmr-calculator .result .calories,
+.bmr-calculator2 .result .calories {
+  color: green;
+  font-size: 38px;
+  font-weight: 900;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+/*ERROR MESSAGE EDIT*/
+
+.bmr-calculator .result .error-message,
+.bmr-calculator2 .result .error-message2 {
+  color: red;
+  font-size: 14px;
+  display: none;
+}
+
+.bmr-calculator .result .error-message.active,
+.bmr-calculator2 .result .error-message2.active {
+  display: block;
+}
+
+/* .dropdown {
+    width: 100%;
+    padding: 4px 16px;
+    font-size: 24px;
+    position: relative;
+    border: 1px solid #d5dbdd;
+  }
+  
+  .dropdown:hover .dropdown-list {
+    opacity: 1;
+    visibility: visible;
+  }
+  .dropdown-select {
+    padding: 1rem;
+    border-radius: 4px;
+    background-color: white;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  .dropdown-list {
+    border-radius: 4px;
+    background-color: white;
+    position: absolute;
+    top: 110%;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.2s linear, visibility 0.2s linear;
+  }
+  
+  .dropdown-list_item {
+    padding: 0.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+  } */
+
+select {
+  width: 100%;
+  padding: 12px 20px;
+  display: inline-block;
+  border: 1px solid #d5dbdd;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.text {
+  margin-top: 600px;
+  padding: 10px;
+  position: relative;
+  background-color: bisque;
+  text-align: center;
+  box-shadow: 0 4px 8px -3px rgba(0, 0, 0, 0.3);
+}
+
+.bmr1-info {
+  max-width: 300px;
+  font-family: "Roberto", sans-serif;
+  padding: 8px 24px;
+  box-shadow: 0 4px 8px -3px rgba(0, 0, 0, 0.3);
+  float: left;
+  text-align: center;
+}
+
+.bmr2-info {
+  max-width: 300px;
+  font-family: "Roberto", sans-serif;
+  padding: 8px 24px;
+  box-shadow: 0 4px 8px -3px rgba(0, 0, 0, 0.3);
+  float: right;
+  text-align: center;
+}
+/* 
+.bmr1-info h2 {
+  
+} */
+.header {
+  text-align: center;
+  margin-bottom: 10px;
+}
+.header span {
+  position: relative;
+  font-family: "Avenir Next", sans-serif;
+  font-weight: 900;
+  font-size: 40px;
+  text-transform: uppercase;
+  font-style: italic;
+  letter-spacing: 0.05em;
+  display: inline-block;
+}
+
+/* We create a pseudo element and blur it using the SVG filter. We’ll grab the content from the custom HTML attribute. */
+
+.header span:before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  content: attr(filter-content);
+
+  filter: url(#motion-blur-filter);
+}
+
+/* We hide the SVG filter element from the DOM as it would take up some space */
+
+.header svg {
+  display: none;
+}
